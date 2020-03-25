@@ -1,10 +1,9 @@
-#Move all png files into one folder called photos.
+
 import shutil, os
 from pathlib import Path
 
-#input path of the folder you want to organize
 main = os.getcwd()
-pngs = [] #creates a list
+pngs = []
 sub = main + '\\Photos\\'
 
 for i in os.listdir(main):
