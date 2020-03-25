@@ -7,7 +7,7 @@ Folders = ['\\Photos','\\Movies','\\Documents','\\Compressed','\\Programs','\\Mu
 
 
 for i in os.listdir(main):
-    if i.endswith('.jpg') or i.endswith('.png') :
+    if i.endswith('.jpg') or i.endswith('.png') or i.endswith('.jpeg') or i.endswith('.gif'):
         if os.path.exists(main + Folders[0]):
             pass
         else:
@@ -16,7 +16,7 @@ for i in os.listdir(main):
         shutil.move(main + '\\' + i , main + Folders[0])
 
 for i in os.listdir(main):
-    if i.endswith('.mp4'):
+    if i.endswith('.mp4') or i.endswith('.avi') or i.endswith('.mkv'):
         if os.path.exists(main + Folders[1]):
             pass
         else:
